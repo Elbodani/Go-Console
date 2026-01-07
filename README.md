@@ -21,4 +21,17 @@ This tool allows you to:
 
 - **Valkey** (running in Docker container)
   - No separate installation needed - runs via Docker
+ 
+-**How to use the tool**
 
+-  .\Console.exe -u -upload-dir "<Path to the directory want to be upload>"
+For uploading
+
+- .\Console.exe -d -download-key "<Key in the DB>" -target-dir "<Path to the directory want download to>"
+For Downloading
+
+- To Access the database (in the command prompt)
+docker exec -it valkey{Name} valkey-cli
+
+- To see database content
+keys* 
